@@ -403,7 +403,7 @@ func init() {
 	flag.Var(&logging.stderrThreshold, "stderrthreshold", "logs at or above this threshold go to stderr")
 	flag.Var(&logging.vmodule, "vmodule", "comma-separated list of pattern=N settings for file-filtered logging")
 	flag.Var(&logging.traceLocation, "log_backtrace_at", "when logging hits line file:N, emit a stack trace")
-	flag.BoolVar(&logging.enableLog, "enablelog", false, "enable to write log")
+	flag.BoolVar(&logging.enableLog, "enablelog", true, "enable to write log")
 
 	// Default stderrThreshold is ERROR.
 	logging.stderrThreshold = errorLog
