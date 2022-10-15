@@ -1083,7 +1083,7 @@ func (v Verbose) Infof(format string, args ...interface{}) {
 }
 
 func EnableLog(flag bool) {
-	loggingT.enableLog = flag
+	logging.enableLog = flag
 }
 
 // Info logs to the INFO log.
